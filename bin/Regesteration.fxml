@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="707.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="LogInPane" layoutX="282.0" layoutY="20.0" prefHeight="418.0" prefWidth="400.0">
+         <children>
+            <JFXTextField fx:id="email" accessibleText="Username@lionmail.com" focusColor="#00caff" labelFloat="true" layoutX="77.0" layoutY="72.0" prefHeight="51.0" prefWidth="276.0" promptText="Email" unFocusColor="#040404">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#00caff" labelFloat="true" layoutX="77.0" layoutY="159.0" prefHeight="51.0" prefWidth="276.0" promptText="Password" unFocusColor="#040404">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="log" layoutX="154.0" layoutY="259.0" onAction="#Login" prefHeight="60.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: rgb(0, 202, 255);" text="Login " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="156.0" layoutY="364.0" onAction="#gotoSignUp" prefHeight="33.0" prefWidth="116.0" text="SignUp Now" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="136.0" layoutY="347.0" text="Don't Have an Account?" />
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="14.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/locked+login+password+privacy+private+protect+protection+safe-1320196167397530530.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="50.0" layoutX="12.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="472.0" prefWidth="269.0" style="-fx-background-color: rgb(0, 202, 255);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="188.0" layoutX="44.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/blion.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="285.0" prefHeight="18.0" prefWidth="127.0" text="Welcome To Lion Mail " textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="state" layoutX="58.0" layoutY="329.0" text="Manage your emails easily " />
+            <Label layoutX="99.0" layoutY="304.0" text=". . . . . . ." />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="signUpPane" layoutX="282.0" layoutY="14.0" prefHeight="428.0" prefWidth="400.0" visible="false">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#00caff" labelFloat="true" layoutX="75.0" layoutY="51.0" prefHeight="37.0" prefWidth="276.0" promptText="Username" unFocusColor="#040404">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass" focusColor="#00caff" labelFloat="true" layoutX="75.0" layoutY="130.0" prefHeight="37.0" prefWidth="276.0" promptText="Password" unFocusColor="#040404">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="c_pass" focusColor="#00caff" labelFloat="true" layoutX="76.0" layoutY="206.0" prefHeight="37.0" prefWidth="276.0" promptText="Confirm password" unFocusColor="#040404">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="154.0" layoutY="265.0" onAction="#signUp" prefHeight="60.0" prefWidth="121.0" ripplerFill="BLACK" style="-fx-background-color: rgb(0, 202, 255);" text="Sign Up" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="156.0" layoutY="369.0" onAction="#gotoSignIn" prefHeight="33.0" prefWidth="116.0" text="LogIn Now" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="132.0" layoutY="352.0" text="Have already an Account?" />
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/locked+login+password+privacy+private+protect+protection+safe-1320196167397530530.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="50.0" layoutX="12.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="15.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/check-verify-pure-write-round-tick-interface-ui-5-14119.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

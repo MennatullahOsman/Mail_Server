@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="1398.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="659.0" prefWidth="227.0" style="-fx-background-color: rgb(0, 202, 255);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="11.0" layoutY="129.0" onAction="#compose" prefHeight="42.0" prefWidth="191.0" style="-fx-background-color: rgb(0, 25, 75);" text="Compose" textFill="WHITE" />
+            <JFXButton fx:id="inbox" layoutX="3.0" layoutY="215.0" onAction="#LeftMenuBtnsAction" prefHeight="32.0" prefWidth="205.0" text="inbox" textFill="WHITE" />
+            <Line endX="150.0" layoutX="55.0" layoutY="247.0" startX="-40.0" stroke="WHITE" />
+            <Line endX="130.0" layoutX="76.0" layoutY="301.0" startX="-60.0" stroke="WHITE" />
+            <ImageView fitHeight="109.0" fitWidth="119.0" layoutX="66.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/blion.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="14.0" layoutY="270.0" onAction="#LeftMenuBtnsAction" prefHeight="32.0" prefWidth="191.0" text="Sent Mail" textFill="WHITE" />
+            <JFXButton layoutX="14.0" layoutY="319.0" onAction="#LeftMenuBtnsAction" prefHeight="32.0" prefWidth="191.0" text="Draft" textFill="WHITE" />
+            <Line endX="140.0" layoutX="69.0" layoutY="358.0" startX="-50.0" stroke="WHITE" />
+            <JFXButton fx:id="labelsCreator" layoutX="18.0" layoutY="421.0" onAction="#openLabelCreator" prefHeight="25.0" prefWidth="191.0" text="Create A New Label" textFill="WHITE" underline="true" visible="false" />
+            <JFXButton layoutX="11.0" layoutY="372.0" onAction="#LeftMenuBtnsAction" prefHeight="32.0" prefWidth="191.0" text="Trash" textFill="WHITE" />
+            <Line endX="140.0" layoutX="64.0" layoutY="404.0" startX="-50.0" stroke="WHITE" />
+            <JFXComboBox fx:id="llistLabels" layoutX="16.0" layoutY="457.0" prefHeight="25.0" prefWidth="191.0" promptText="Labels" visible="false" />
+            <JFXButton fx:id="ViewLabels" layoutX="48.0" layoutY="494.0" onAction="#LabelsViewerBtnAction" prefHeight="25.0" prefWidth="126.0" text="View Label" visible="false" />
+            <JFXButton fx:id="seeBtn" layoutX="9.0" layoutY="413.0" onAction="#seeMoreBtnAction" prefHeight="102.0" prefWidth="205.0" text="See More " />
+         </children>
+      </Pane>
+      <Pane fx:id="overPane" layoutX="254.0" layoutY="318.0" prefHeight="394.0" prefWidth="1091.0" />
+      <Pane layoutX="247.0" layoutY="34.0" prefHeight="226.0" prefWidth="1126.0">
+         <children>
+            <JFXComboBox fx:id="selectToMove" disable="true" layoutX="378.0" layoutY="24.0" onAction="#selectToMoveBtnAction" prefHeight="32.0" prefWidth="191.0" />
+            <JFXButton fx:id="Search" disable="true" layoutX="588.0" layoutY="76.0" onAction="#SearchBtnAction" prefHeight="48.0" prefWidth="34.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/blue-search-icon-7.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="items" disable="true" layoutX="23.0" layoutY="84.0" onAction="#setPromo" prefHeight="32.0" prefWidth="297.0" promptText="Search with .." />
+            <JFXTextField fx:id="sName" disable="true" layoutX="378.0" layoutY="84.0" prefHeight="32.0" prefWidth="191.0" promptText=" what do you searsh for?" />
+            <JFXComboBox fx:id="sortComboBox" disable="true" layoutX="23.0" layoutY="150.0" onAction="#sortEnable" prefHeight="32.0" prefWidth="297.0" promptText="Sort by ..  " />
+            <JFXButton fx:id="Sort" disable="true" layoutX="344.0" layoutY="138.0" onAction="#SortBtnAction" prefHeight="56.0" prefWidth="33.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/images.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="690.0" layoutY="78.0" prefHeight="53.0" prefWidth="171.0" text="Welcome," textFill="#3e60a4">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" layoutX="861.0" layoutY="78.0" prefHeight="53.0" prefWidth="252.0" textFill="#3e60a4">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <GridPane layoutY="14.0" prefHeight="53.0" prefWidth="352.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="moveto" disable="true" onAction="#MoveEmails" prefHeight="43.0" prefWidth="73.0" style="-fx-background-image: images\blion.png;" text=" " GridPane.columnIndex="3">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/274986805-k-__package_warehouse_moving_box-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="Refresh" disable="true" onAction="#refreshBtnAction" prefHeight="42.0" prefWidth="52.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/9cb7ac64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="Rename" disable="true" onAction="#renameBtnActin" prefHeight="58.0" prefWidth="68.0" text=" " GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/unnamed%20(2).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="deleteFrom" disable="true" onAction="#deleteEmails" prefHeight="59.0" prefWidth="63.0" style="-fx-background-image: images\blion.png;" text=" " GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete-trash-dustbin-garbage-remove-recyclebin-ui-3-14057.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

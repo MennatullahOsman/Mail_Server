@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="415.0" prefWidth="1161.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="pnl_scroll" layoutX="22.0" layoutY="27.0" prefHeight="351.0" prefWidth="1105.0">
+         <children>
+            <JFXCheckBox fx:id="cb0" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn0" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date0" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub0" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line0" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb1" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn1" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date1" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub1" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line1" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb2" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn2" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date2" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub2" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line2" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb3" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn3" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date3" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub3" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line3" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb4" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn4" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date4" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub4" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line4" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb5" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn5" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date5" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub5" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line5" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb6" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn6" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date6" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub6" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line6" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb7" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn7" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date7" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub7" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line7" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb8" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn8" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date8" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub8" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line8" endX="1000.0" startX="-100.0" stroke="#00caff" />
+            <JFXCheckBox fx:id="cb9" checkedColor="#00caff" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkIfSellected" prefHeight="31.0" prefWidth="1105.0" text="cb">
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+               <graphic>
+                  <JFXButton fx:id="btn9" onAction="#emailviewer" prefHeight="25.0" prefWidth="1080.0" text="Button">
+                     <graphic>
+                        <Label fx:id="date9" prefHeight="17.0" prefWidth="1068.0">
+                           <graphic>
+                              <Label fx:id="sub9" prefHeight="17.0" prefWidth="903.0" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+            </JFXCheckBox>
+            <Line fx:id="line9" endX="1000.0" startX="-100.0" stroke="#00caff" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="Next" layoutX="680.0" layoutY="378.0" onAction="#seeNext" prefHeight="25.0" prefWidth="181.0" text="See Next" textAlignment="CENTER" underline="true" />
+      <JFXButton fx:id="Previous" layoutX="390.0" layoutY="378.0" onAction="#seePreviousBtnActon" prefHeight="25.0" prefWidth="126.0" text="See Previous" underline="true" />
+   </children>
+</AnchorPane>
